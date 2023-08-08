@@ -2,8 +2,6 @@
 
 ruta=$(pwd)
 
-persmisos=$(chmod +x ~/.config/bspwm/bspwmrc & chmod +x ~/.config/bspwm/scripts/bspwm_resize & chmod +x ~/.config/bin/ethernet_status.sh & chmod +x ~/.config/bin/htb_status.sh & chmod +x ~/.config/bin/htb_target.sh & chmod +x ~/.config/polybar/launch.sh & sudo chmod +x /usr/local/bin/whichSystem.py & sudo chmod +x /usr/local/bin/screenshot & rofi-theme-selector)
-
 opciones()
 {
     zenity --list --title="Selecciona una opción" --column="Elige una opción: " "$@"
@@ -11,62 +9,109 @@ opciones()
 
 Pacman_theme()
 {
-    cp -v $ruta/Themes/Pacman/.p10k.zsh ~/.p10k.zsh
+    sudo cp -v $ruta/Themes/Pacman/.p10k.zsh ~/.p10k.zsh
     sudo cp -v $ruta/Themes/Pacman/.p10k.zsh-root /root/.p10k.zsh
     echo "p10k setup"
-    cp -rv $ruta/Themes/Pacman/Config/* ~/.config/
-    $permisos
+    sudo cp -rv $ruta/Themes/Pacman/Config/* ~/.config/
+    sudo chmod +x ~/.config/bspwm/bspwmrc 
+    sudo chmod +x ~/.config/bspwm/scripts/bspwm_resize 
+    sudo chmod +x ~/.config/bin/ethernet_status.sh
+    sudo chmod +x ~/.config/bin/htb_status.sh 
+    sudo chmod +x ~/.config/bin/htb_target.sh 
+    sudo chmod +x ~/.config/polybar/launch.sh 
+    sudo chmod +x /usr/local/bin/whichSystem.py 
+    sudo chmod +x /usr/local/bin/screenshot 
+    rofi-theme-selector
     echo "Pacman theme instalado"
 }
 
 Parrot_theme()
 {
-    cp -v $ruta/Themes/Parrot/.p10k.zsh ~/.p10k.zsh
+    sudo cp -v $ruta/Themes/Parrot/.p10k.zsh ~/.p10k.zsh
     sudo cp -v $ruta/Themes/Parrot/.p10k.zsh-root /root/.p10k.zsh
     echo "p10k setup"
-    cp -rv $ruta/Themes/Parrot/Config/* ~/.config/
-    $permisos
+    sudo cp -rv $ruta/Themes/Parrot/Config/* ~/.config/
+    sudo chmod +x ~/.config/bspwm/bspwmrc 
+    sudo chmod +x ~/.config/bspwm/scripts/bspwm_resize 
+    sudo chmod +x ~/.config/bin/ethernet_status.sh
+    sudo chmod +x ~/.config/bin/htb_status.sh 
+    sudo chmod +x ~/.config/bin/htb_target.sh 
+    sudo chmod +x ~/.config/polybar/launch.sh 
+    sudo chmod +x /usr/local/bin/whichSystem.py 
+    sudo chmod +x /usr/local/bin/screenshot 
+    rofi-theme-selector
     echo "Parrot theme instalado"
 }
 
 S4vi_theme()
 {
-    cp -v $ruta/Themes/S4vi/.p10k.zsh ~/.p10k.zsh
+    sudo cp -v $ruta/Themes/S4vi/.p10k.zsh ~/.p10k.zsh
     sudo cp -v $ruta/Themes/S4vi/.p10k.zsh-root /root/.p10k.zsh
     echo "p10k setup"
-    cp -rv $ruta/Themes/S4vi/Config/* ~/.config/
-    $permisos
+    sudo cp -rv $ruta/Themes/S4vi/Config/* ~/.config/
+    sudo chmod +x ~/.config/bspwm/bspwmrc 
+    sudo chmod +x ~/.config/bspwm/scripts/bspwm_resize 
+    sudo chmod +x ~/.config/bin/ethernet_status.sh
+    sudo chmod +x ~/.config/bin/htb_status.sh 
+    sudo chmod +x ~/.config/bin/htb_target.sh 
+    sudo chmod +x ~/.config/polybar/launch.sh 
+    sudo chmod +x /usr/local/bin/whichSystem.py 
+    sudo chmod +x /usr/local/bin/screenshot 
+    rofi-theme-selector
     echo "S4vi theme instalado"
 }
 
 Cinnamoroll_theme()
 {
-    cp -v $ruta/Themes/Cinnamoroll/.p10k.zsh ~/.p10k.zsh
+    sudo cp -v $ruta/Themes/Cinnamoroll/.p10k.zsh ~/.p10k.zsh
     sudo cp -v $ruta/Themes/Cinnamoroll/.p10k.zsh-root /root/.p10k.zsh
     echo "p10k setup"
-    cp -rv $ruta/Themes/Cinnamoroll/Config/* ~/.config/
-    $permisos
+    sudo cp -rv $ruta/Themes/Cinnamoroll/Config/* ~/.config/
+    sudo chmod +x ~/.config/bspwm/bspwmrc 
+    sudo chmod +x ~/.config/bspwm/scripts/bspwm_resize 
+    sudo chmod +x ~/.config/bin/ethernet_status.sh
+    sudo chmod +x ~/.config/bin/htb_status.sh 
+    sudo chmod +x ~/.config/bin/htb_target.sh 
+    sudo chmod +x ~/.config/polybar/launch.sh 
+    sudo chmod +x /usr/local/bin/whichSystem.py 
+    sudo chmod +x /usr/local/bin/screenshot 
+    rofi-theme-selector
     echo "Cinnamoroll theme instalado"
 }
 
 Pink_theme()
 {
-    cp -v $ruta/Themes/Pink/.p10k.zsh ~/.p10k.zsh
+    sudo cp -v $ruta/Themes/Pink/.p10k.zsh ~/.p10k.zsh
     sudo cp -v $ruta/Themes/Pink/.p10k.zsh-root /root/.p10k.zsh
     echo "p10k setup"
-    cp -rv $ruta/Themes/Pink/Config/* ~/.config/
-    $permisos
+    sudo cp -rv $ruta/Themes/Pink/Config/* ~/.config/
+    sudo chmod +x ~/.config/bspwm/bspwmrc 
+    sudo chmod +x ~/.config/bspwm/scripts/bspwm_resize 
+    sudo chmod +x ~/.config/bin/ethernet_status.sh
+    sudo chmod +x ~/.config/bin/htb_status.sh 
+    sudo chmod +x ~/.config/bin/htb_target.sh 
+    sudo chmod +x ~/.config/polybar/launch.sh 
+    sudo chmod +x /usr/local/bin/whichSystem.py 
+    sudo chmod +x /usr/local/bin/screenshot 
+    rofi-theme-selector
     echo "Pink theme instalado"
 }
 
 ZLCube_theme()
 {
-    cp -v $ruta/Themes/ZLCube/.p10k.zsh ~/.p10k.zsh
-    sudo cp -v $ruta/Themes/ZLCube/.p10k.zsh-root /root/.p10k.zsh
+    sudo cp -v $ruta/Themes/ZLCube/.p10k.zsh ~/.p10k.zsh
     echo "p10k setup"
-    cp -rv $ruta/Themes/Pink/Config/* ~/.config/
-    $permisos
-    echo "Pink theme instalado"
+    sudo cp -rv $ruta/Themes/ZLCube/Config/* ~/.config/
+    sudo chmod +x ~/.config/bspwm/bspwmrc 
+    sudo chmod +x ~/.config/bspwm/scripts/bspwm_resize 
+    sudo chmod +x ~/.config/bin/ethernet_status.sh
+    sudo chmod +x ~/.config/bin/htb_status.sh 
+    sudo chmod +x ~/.config/bin/htb_target.sh 
+    sudo chmod +x ~/.config/polybar/launch.sh 
+    sudo chmod +x /usr/local/bin/whichSystem.py 
+    sudo chmod +x /usr/local/bin/screenshot 
+    rofi-theme-selector
+    echo "ZLCube theme instalado"
 }
 
 
