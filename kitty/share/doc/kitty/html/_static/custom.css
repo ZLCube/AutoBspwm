@@ -1,0 +1,36 @@
+/*
+ * custom.css
+ * Copyright (C) 2018 Kovid Goyal
+ *
+ * Distributed under terms of the MIT license.
+ */
+
+.italic {
+    font-style: italic;
+}
+
+.sidebar-logo {
+    max-height: 128px;
+}
+
+.major-features li {
+    margin-bottom: 0.75ex;
+    margin-top: 0.75ex;
+}
+
+.sidebar-tree a.current {
+    font-style: italic;
+}
+
+details > summary {
+    color: var(--color-link);
+    cursor: pointer;
+    text-decoration-color: var(--color-link-underline);
+    text-decoration-line: underline;
+}
+
+/* pygments adds an underline to some white-space, this is particularly visible in
+ * dark mode. Remove it. */
+.highlight .w {
+    text-decoration: none
+}

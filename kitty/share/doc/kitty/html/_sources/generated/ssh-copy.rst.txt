@@ -1,0 +1,29 @@
+.. highlight:: sh
+.. code-block:: sh
+
+  copy [options] file-or-dir-to-copy ...
+
+Copy files and directories from local to remote hosts. The specified files are
+assumed to be relative to the HOME directory and copied to the HOME on the
+remote. Directories are copied recursively. If absolute paths are used, they are
+copied as is.
+
+Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. option:: --glob
+
+    Interpret file arguments as glob patterns.
+
+.. option:: --dest <DEST>
+
+    The destination on the remote host to copy to. Relative paths are resolved relative to HOME on the remote host. When this option is not specified, the local file path is used as the remote destination (with the HOME directory getting automatically replaced by the remote HOME). Note that environment variables and ~ are not expanded.
+
+.. option:: --exclude <EXCLUDE>
+
+    A glob pattern. Files with names matching this pattern are excluded from being transferred. Useful when adding directories. Can be specified multiple times, if any of the patterns match the file will be excluded. To exclude a directory use a pattern like */directory_name/*.
+
+.. option:: --symlink-strategy <SYMLINK_STRATEGY>
+
+    Control what happens if the specified path is a symlink. The default is to preserve the symlink, re-creating it on the remote machine. Setting this to :code:`resolve` will cause the symlink to be followed and its target used as the file/directory to copy. The value of :code:`keep-path` is the same as :code:`resolve` except that the remote file path is derived from the symlink's path instead of the path of the symlink's target. Note that this option does not apply to symlinks encountered while recursively copying directories.
+    Default: :code:`preserve`
+    Choices: :code:`keep-path`, :code:`preserve`, :code:`resolve`

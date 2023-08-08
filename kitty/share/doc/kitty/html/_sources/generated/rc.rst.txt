@@ -1,0 +1,600 @@
+close-tab
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`match (default: None)`
+  Which tab to close
+
+:code:`no_response (default: False)`
+  Boolean indicating whether to wait for a response
+
+:code:`self (default: False)`
+  Boolean indicating whether to close the tab of the window the command is run in
+
+:code:`ignore_no_match (default: False)`
+  Boolean indicating whether no matches should be ignored or return an error
+
+
+
+close-window
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`match (default: None)`
+  Which window to close
+
+:code:`no_response (default: False)`
+  Boolean indicating whether to wait for a response
+
+:code:`self (default: False)`
+  Boolean indicating whether to close the window the command is run in
+
+:code:`ignore_no_match (default: False)`
+  Boolean indicating whether no matches should be ignored or return an error
+
+
+
+create-marker
+--------------------------------------------------------------------------------
+    marker_spec/list.str: A list or arguments that define the marker specification, for example: ['text', '1', 'ERROR']
+
+Fields are:
+
+:code:`match (default: None)`
+  Which window to create the marker in
+
+:code:`self (default: False)`
+  Boolean indicating whether to create marker in the window the command is run in
+
+
+
+detach-tab
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`match (default: None)`
+  Which tab to detach
+
+:code:`target_tab (default: None)`
+  Which tab to move the detached tab to the OS window it is run in
+
+:code:`self (default: False)`
+  Boolean indicating whether to detach the tab the command is run in
+
+
+
+detach-window
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`match (default: None)`
+  Which window to detach
+
+:code:`target_tab (default: None)`
+  Which tab to move the detached window to
+
+:code:`self (default: False)`
+  Boolean indicating whether to detach the window the command is run in
+
+
+
+disable-ligatures
+--------------------------------------------------------------------------------
+strategy+/choices.never.always.cursor: One of :code:`never`, :code:`always` or :code:`cursor`
+
+Fields are:
+
+:code:`match_window (optional)`
+  Window to change opacity in
+
+:code:`match_tab (default: None)`
+  Tab to change opacity in
+
+:code:`all (default: False)`
+  Boolean indicating operate on all windows
+
+
+
+env
+--------------------------------------------------------------------------------
+env+/dict.str: Dictionary of environment variables to values. Empty values cause the variable to be removed.
+
+
+focus-tab
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`match (default: None)`
+  The tab to focus
+
+
+
+focus-window
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`match (default: None)`
+  The window to focus
+
+
+
+get-colors
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`match (default: None)`
+  The window to get the colors for
+
+:code:`configured (default: False)`
+  Boolean indicating whether to get configured or current colors
+
+
+
+get-text
+--------------------------------------------------------------------------------
+    extent/choices.screen.first_cmd_output_on_screen.last_cmd_output.last_visited_cmd_output.all.selection:         One of :code:`screen`, :code:`first_cmd_output_on_screen`, :code:`last_cmd_output`,         :code:`last_visited_cmd_output`, :code:`all`, or :code:`selection`
+
+Fields are:
+
+:code:`match (default: None)`
+  The window to get text from
+
+:code:`ansi (default: False)`
+  Boolean, if True send ANSI formatting codes
+
+:code:`cursor (optional)`
+  Boolean, if True send cursor position/style as ANSI codes
+
+:code:`wrap_markers (optional)`
+  Boolean, if True add wrap markers to output
+
+:code:`clear_selection (default: None)`
+  Boolean, if True clear the selection in the matched window
+
+:code:`self (default: False)`
+  Boolean, if True use window the command was run in
+
+
+
+goto-layout
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`layout (required)`
+  The new layout name
+
+:code:`match (default: None)`
+  Which tab to change the layout of
+
+
+
+kitten
+--------------------------------------------------------------------------------
+    args/list.str: Arguments to pass to the kitten as a list
+
+Fields are:
+
+:code:`kitten (required)`
+  The name of the kitten to run
+
+:code:`match (default: None)`
+  The window to run the kitten over
+
+
+
+last-used-layout
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`match (default: None)`
+  Which tab to change the layout of
+
+:code:`all (default: False)`
+  Boolean to match all tabs
+
+
+
+launch
+--------------------------------------------------------------------------------
+args+/list.str: The command line to run in the new window, as a list, use an empty list to run the default shell
+    env/list.str: List of environment variables of the form NAME=VALUE
+    type/choices.window.tab.os-window.overlay.background.clipboard.primary: The type of window to open
+    location/choices.first.after.before.neighbor.last.vsplit.hsplit.split.default: Where in the tab to open the new window
+    stdin_source/choices.none.@selection.@screen.@screen_scrollback.@alternate.@alternate_scrollback.        @first_cmd_output_on_screen.@last_cmd_output.@last_visited_cmd_output: Where to get stdin for the process from
+    spacing/list.str: A list of spacing specifications, see the docs for the set-spacing command
+
+Fields are:
+
+:code:`match (default: None)`
+  The tab to open the new window in
+
+:code:`window_title (default: None)`
+  Title for the new window
+
+:code:`cwd (default: None)`
+  Working directory for the new window
+
+:code:`tab_title (default: None)`
+  Title for the new tab
+
+:code:`keep_focus (default: False)`
+  Boolean indicating whether the current window should retain focus or not
+
+:code:`copy_colors (default: False)`
+  Boolean indicating whether to copy the colors from the current window
+
+:code:`copy_cmdline (default: False)`
+  Boolean indicating whether to copy the cmdline from the current window
+
+:code:`copy_env (default: False)`
+  Boolean indicating whether to copy the environ from the current window
+
+:code:`hold (default: False)`
+  Boolean indicating whether to keep window open after cmd exits
+
+:code:`allow_remote_control (default: False)`
+  Boolean indicating whether to allow remote control from the new window
+
+:code:`remote_control_password (default: [])`
+  A list of remote control passwords
+
+:code:`stdin_add_formatting (default: False)`
+  Boolean indicating whether to add formatting codes to stdin
+
+:code:`stdin_add_line_wrap_markers (default: False)`
+  Boolean indicating whether to add line wrap markers to stdin
+
+:code:`no_response (default: False)`
+  Boolean indicating whether to send back the window id
+
+:code:`marker (default: None)`
+  Specification for marker for new window, for example: "text 1 ERROR"
+
+:code:`logo (default: None)`
+  Path to window logo
+
+:code:`logo_position (default: None)`
+  Window logo position as string or empty string to use default
+
+:code:`logo_alpha (default: -1.0)`
+  Window logo alpha or -1 to use default
+
+:code:`self (default: False)`
+  Boolean, if True use tab the command was run in
+
+
+
+ls
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`all_env_vars (default: False)`
+  Whether to send all environment variables for every window rather than just differing ones
+
+
+
+new-window
+--------------------------------------------------------------------------------
+args+/list.str: The command line to run in the new window, as a list, use an empty list to run the default shell
+    window_type/choices.kitty.os: One of :code:`kitty` or :code:`os`
+
+Fields are:
+
+:code:`match (default: None)`
+  The tab to open the new window in
+
+:code:`title (default: None)`
+  Title for the new window
+
+:code:`cwd (default: None)`
+  Working directory for the new window
+
+:code:`keep_focus (default: False)`
+  Boolean indicating whether the current window should retain focus or not
+
+:code:`new_tab (default: False)`
+  Boolean indicating whether to open a new tab
+
+:code:`tab_title (default: None)`
+  Title for the new tab
+
+:code:`no_response (default: False)`
+  Boolean indicating whether to send back the window id
+
+
+
+remove-marker
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`match (default: None)`
+  Which window to remove the marker from
+
+:code:`self (default: False)`
+  Boolean indicating whether to detach the window the command is run in
+
+
+
+resize-os-window
+--------------------------------------------------------------------------------
+    action/choices.resize.toggle-fullscreen.toggle-maximized: One of :code:`resize, toggle-fullscreen` or :code:`toggle-maximized`
+    unit/choices.cells.pixels: One of :code:`cells` or :code:`pixels`
+
+Fields are:
+
+:code:`match (default: None)`
+  Which window to resize
+
+:code:`self (default: False)`
+  Boolean indicating whether to close the window the command is run in
+
+:code:`incremental (default: False)`
+  Boolean indicating whether to adjust the size incrementally
+
+:code:`width (default: 0)`
+  Integer indicating desired window width
+
+:code:`height (default: 0)`
+  Integer indicating desired window height
+
+
+
+resize-window
+--------------------------------------------------------------------------------
+    axis/choices.horizontal.vertical.reset: One of :code:`horizontal, vertical` or :code:`reset`
+
+Fields are:
+
+:code:`match (default: None)`
+  Which window to resize
+
+:code:`self (default: False)`
+  Boolean indicating whether to resize the window the command is run in
+
+:code:`increment (default: 2)`
+  Integer specifying the resize increment
+
+
+
+scroll-window
+--------------------------------------------------------------------------------
+amount+/list.scroll_amount: The amount to scroll, a two item list with the first item being              either a number or the keywords, start and end.              And the second item being either 'p' for pages or 'l' for lines or 'u'
+             for unscrolling by lines.
+
+Fields are:
+
+:code:`match (default: None)`
+  The window to scroll
+
+:code:`no_response (default: False)`
+  Boolean indicating whether to wait for a response
+
+
+
+select-window
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`match (default: None)`
+  The tab to open the new window in
+
+:code:`self (default: False)`
+  Boolean, if True use tab the command was run in
+
+:code:`title (default: None)`
+  A title for this selection
+
+:code:`exclude_active (default: False)`
+  Exclude the currently active window from the list to pick
+
+:code:`reactivate_prev_tab (default: False)`
+  Reactivate the previously activated tab when finished
+
+
+
+send-text
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`data (required)`
+  The data being sent. Can be either: text: followed by text or base64: followed by standard base64 encoded bytes
+
+:code:`match (default: None)`
+  A string indicating the window to send text to
+
+:code:`match_tab (default: None)`
+  A string indicating the tab to send text to
+
+:code:`all (default: False)`
+  A boolean indicating all windows should be matched.
+
+:code:`exclude_active (default: False)`
+  A boolean that prevents sending text to the active window
+
+:code:`session_id (optional)`
+  A string that identifies a "broadcast session"
+
+
+
+set-background-opacity
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`opacity (required)`
+  A number between 0.1 and 1
+
+:code:`match_window (optional)`
+  Window to change opacity in
+
+:code:`match_tab (default: None)`
+  Tab to change opacity in
+
+:code:`all (default: False)`
+  Boolean indicating operate on all windows
+
+
+
+set-colors
+--------------------------------------------------------------------------------
+colors+/dict.colors: An object mapping names to colors as 24-bit RGB integers or null for nullable colors
+
+Fields are:
+
+:code:`match_window (optional)`
+  Window to change colors in
+
+:code:`match_tab (default: None)`
+  Tab to change colors in
+
+:code:`all (default: False)`
+  Boolean indicating change colors everywhere or not
+
+:code:`configured (default: False)`
+  Boolean indicating whether to change the configured colors. Must be True if reset is True
+
+:code:`reset (default: False)`
+  Boolean indicating colors should be reset to startup values
+
+
+
+set-enabled-layouts
+--------------------------------------------------------------------------------
+layouts+/list.str: The list of layout names
+
+Fields are:
+
+:code:`match (default: None)`
+  Which tab to change the layout of
+
+:code:`configured (default: False)`
+  Boolean indicating whether to change the configured value
+
+
+
+set-font-size
+--------------------------------------------------------------------------------
+    increment_op/choices.+.-: The string ``+`` or ``-`` to interpret size as an increment
+
+Fields are:
+
+:code:`size (required)`
+  The new font size in pts (a positive number)
+
+:code:`all (default: False)`
+  Boolean whether to change font size in the current window or all windows
+
+
+
+set-spacing
+--------------------------------------------------------------------------------
+settings+/dict.spacing: An object mapping margins/paddings using canonical form {'margin-top': 50, 'padding-left': null} etc
+
+Fields are:
+
+:code:`match_window (optional)`
+  Window to change paddings and margins in
+
+:code:`match_tab (default: None)`
+  Tab to change paddings and margins in
+
+:code:`all (default: False)`
+  Boolean indicating change paddings and margins everywhere or not
+
+:code:`configured (default: False)`
+  Boolean indicating whether to change the configured paddings and margins. Must be True if reset is True
+
+
+
+set-tab-color
+--------------------------------------------------------------------------------
+colors+/dict.colors: An object mapping names to colors as 24-bit RGB integers. A color value of null indicates it should be unset.
+
+Fields are:
+
+:code:`match (default: None)`
+  Which tab to change the color of
+
+:code:`self (default: False)`
+  Boolean indicating whether to use the tab of the window the command is run in
+
+
+
+set-tab-title
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`title (required)`
+  The new title
+
+:code:`match (default: None)`
+  Which tab to change the title of
+
+
+
+set-window-logo
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`data (required)`
+  Chunk of at most 512 bytes of PNG data, base64 encoded. Must send an empty chunk to indicate end of image.     Or the special value :code:`-` to indicate image must be removed.
+
+:code:`position (default: None)`
+  The logo position as a string, empty string means default
+
+:code:`alpha (default: -1.0)`
+  The logo alpha between :code:`0` and :code:`1`. :code:`-1` means use default
+
+:code:`match (default: None)`
+  Which window to change the logo in
+
+:code:`self (default: False)`
+  Boolean indicating whether to act on the window the command is run in
+
+
+
+set-window-title
+--------------------------------------------------------------------------------
+
+Fields are:
+
+:code:`title (optional)`
+  The new title
+
+:code:`match (default: None)`
+  Which windows to change the title in
+
+:code:`temporary (default: False)`
+  Boolean indicating if the change is temporary or permanent
+
+
+
+signal-child
+--------------------------------------------------------------------------------
+signals/list.str: The signals, a list of names, such as :code:`SIGTERM`, :code:`SIGKILL`, :code:`SIGUSR1`, etc.
+
+Fields are:
+
+:code:`match (default: None)`
+  Which windows to send the signals to
+
+:code:`no_response (default: False)`
+  Boolean indicating whether to wait for a response
+
+
+
