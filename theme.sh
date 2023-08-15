@@ -196,7 +196,7 @@ ZLCube_theme()
 	sudo cp -rv $ruta/Themes/ZLCube/Config/* ~/.config/
 	echo "config setup"
     rofi-theme-selector
-    echo "Pink theme instalado"
+    echo "ZLCube theme instalado"
 }
 
 
