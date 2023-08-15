@@ -3,8 +3,7 @@
 ruta=$(pwd)
 
 chmod +x $ruta/theme.sh
-chmod +x $ruta/Kali.sh
-chmod +x $ruta/Parrot.sh
+chmod +x $ruta/install.sh
 
 menu()
 {
@@ -34,10 +33,10 @@ exec()
 {
 	case $1 in
 		1)
-			./Kali.sh
+			sudo apt update & sudo apt upgrade & ./install.sh
 			;;
 		2)
-			./Parrot.sh
+			sudo apt update & sudo parrot-upgrade & ./install.sh
 			;;
 		3)
 			echo "Exit script"
