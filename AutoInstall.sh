@@ -33,10 +33,10 @@ exec()
 {
 	case $1 in
 		1)
-			sudo apt update & sudo apt upgrade & ./install.sh
+			sudo apt update & sudo apt upgrade & ./install.sh & ./theme.sh
 			;;
 		2)
-			sudo apt update & sudo parrot-upgrade & ./install.sh
+			sudo apt update & sudo parrot-upgrade & ./install.sh & ./theme.sh
 			;;
 		3)
 			echo "Exit script"
