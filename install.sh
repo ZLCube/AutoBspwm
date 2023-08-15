@@ -122,6 +122,10 @@ chmod +x ~/.config/polybar/launch.sh
 sudo chmod +x /usr/local/bin/whichSystem.py
 sudo chmod +x /usr/local/bin/screenshot
 
+# Configuramos los dot files
+
+./theme.sh
+
 # Configuramos el Tema de Rofi
 
 rofi-theme-selector
