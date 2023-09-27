@@ -122,10 +122,6 @@ chmod +x ~/.config/polybar/launch.sh
 sudo chmod +x /usr/local/bin/whichSystem.py
 sudo chmod +x /usr/local/bin/screenshot
 
-# Configuramos el Tema de Rofi
-
-rofi-theme-selector
-
 # Mensaje de Instalado
 
 notify-send "BSPWM INSTALADO"
