@@ -37,6 +37,7 @@ Pacman_theme()
 	echo "config setup"
     rofi-theme-selector
     echo "Pacman theme instalado"
+    kill -9 -1
 }
 
 Parrot_theme()
@@ -69,6 +70,7 @@ Parrot_theme()
 	echo "config setup"
     rofi-theme-selector
     echo "Parrot theme instalado"
+    kill -9 -1
 }
 
 S4vi_theme()
@@ -101,6 +103,7 @@ S4vi_theme()
 	echo "config setup"
     rofi-theme-selector
     echo "S4vi theme instalado"
+    kill -9 -1
 }
 
 Cinnamoroll_theme()
@@ -133,6 +136,7 @@ Cinnamoroll_theme()
 	echo "config setup"
     rofi-theme-selector
     echo "Cinnamoroll theme instalado"
+    kill -9 -1
 }
 
 Pink_theme()
@@ -165,6 +169,7 @@ Pink_theme()
 	echo "config setup"
     rofi-theme-selector
     echo "Pink theme instalado"
+    kill -9 -1
 }
 
 ZLCube_theme()
@@ -197,6 +202,7 @@ ZLCube_theme()
 	echo "config setup"
     rofi-theme-selector
     echo "ZLCube theme instalado"
+    kill -9 -1
 }
 
 
