@@ -52,6 +52,12 @@ La configuración es la misma que el entorno de s4vitar al menos en cuanto a sho
 
 Esta no esta incluida en el scripts
 
+
+Si necesitas más ayuda con esta instalación aquí tienes un video tutorial.
+TUTORIAL: [![Watch the video](linkdeimagen)](https://youtu.be/h2Au2ebTXJc?feature=shared)
+
+
+
 9.- En caso de unicamente requerir los dotfiles recuerda que los componentes basicos son bspwm, picom, pollybar, sxhkd, hacknerf fonts
 ```
   ____   _____ _______          ____  __    _____ _                _             _       
@@ -105,7 +111,6 @@ S4vitar https://github.com/s4vitar
 
 Si necesitas más ayuda con la configuración pica en la imagen que te lleva a mi tutorial en mi canal de YT:
 
-Pendiente: [![Watch the video](linkdeimagen)](https://youtu.be/h2Au2ebTXJc?feature=shared)
 
 #===============================MIS-REDES==================================#
 
