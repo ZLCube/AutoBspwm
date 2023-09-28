@@ -54,6 +54,36 @@ Esta no esta incluida en el scripts
 
 9.- En caso de unicamente requerir los dotfiles recuerda que los componentes basicos son bspwm, picom, pollybar, sxhkd, hacknerf fonts
 
+===========================================================================================================
+  ____   _____ _______          ____  __    _____ _                _             _       
+ |  _ \ / ____|  __ \ \        / /  \/  |  / ____| |              | |           | |      
+ | |_) | (___ | |__) \ \  /\  / /| \  / | | (___ | |__   ___  _ __| |_ ___ _   _| |_ ___ 
+ |  _ < \___ \|  ___/ \ \/  \/ / | |\/| |  \___ \| '_ \ / _ \| '__| __/ __| | | | __/ __|
+ | |_) |____) | |      \  /\  /  | |  | |  ____) | | | | (_) | |  | || (__| |_| | |_\__ \
+ |____/|_____/|_|       \/  \/   |_|  |_| |_____/|_| |_|\___/|_|   \__\___|\__,_|\__|___/
+                                                                                         
+===========================================================================================================
+windows + enter abre terminal 
+windows + w cierra terminal
+windows + d abre el buscador de aplicaciones
+windows hold mover libremente la ventana
+windows clic derecho reescalar libremente la ventana
+windows + alt + flechas escalar ventana
+windows + ctl + flechas mover ventana
+control + shift + t abre pestaña en terminal
+control shift alt t renombrar pestaña de terminal
+control shift w cerrar pestaña de terminal
+windows + "1,2,3,4,5,6,7,8,9,0" cambiar de escritorio
+windows + shift + "1,2,3,4,5,6,7,8,9,0" cambiar de escritorio la ventana actual al escritorio seleccionado
+============================================================================================================
+
+Los dot files los puedes modificar en las siguientes rutas.
+
+~/.config/bspwm/bspwmrc
+~/.config/polybar/
+~/.config/picom/picom.conf
+~/.config/sxhkd/sxhkdrc
+
 
 ## [ZLCube theme]
 ![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/Screenshot%202023-08-26%20151856.png)
