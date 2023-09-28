@@ -31,6 +31,12 @@ chmod +x AutoInstall.sh
 
 ![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/select.png)
 
+5.- Este menu es el rofi theme selector, para navegar entre los themes podemos usar flecha hacia arriba + enter, para seleccionar el que nos guste apretaremos alt + a.
+
+![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/rofi.png)
+
+En caso de querer cambiarlo nuevamente podemos escribir en consola ```rofi -theme selector```
+
 2.- Wallpaper
 
 Para cambiar el wallpaper usaremos el comando
