@@ -21,6 +21,9 @@ chmod +x AutoInstall.sh
 
 ![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/menu.png)
 
+3.- Nos va a saltar un theme selector NO SELECCIONES NADA AUN
+
+![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/theme.png)
 
 2.- Wallpaper
 
