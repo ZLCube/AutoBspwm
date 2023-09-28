@@ -124,4 +124,14 @@ sudo chmod +x /usr/local/bin/screenshot
 
 # Mensaje de Instalado
 
+clear
+
+echo "Selecciona un theme en el theme selector"
+echo "Selecciona un theme en el theme selector"
+echo "Selecciona un theme en el theme selector"
+echo "Selecciona un theme en el theme selector"
+echo "Selecciona un theme en el theme selector"
+echo "Selecciona un theme en el theme selector"
+
+
 notify-send "BSPWM INSTALADO"
