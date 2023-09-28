@@ -105,7 +105,7 @@ S4vitar https://github.com/s4vitar
 
 Si necesitas más ayuda con la configuración pica en la imagen que te lleva a mi tutorial en mi canal de YT:
 
-Pendiente: [![Watch the video](linkdeimagen)](linkdeyt)
+Pendiente: [![Watch the video](linkdeimagen)](https://youtu.be/h2Au2ebTXJc?feature=shared)
 
 #===============================MIS-REDES==================================#
 
