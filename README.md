@@ -53,7 +53,8 @@ La configuración es la misma que el entorno de s4vitar al menos en cuanto a sho
 Esta no esta incluida en el scripts
 
 
-Si necesitas más ayuda con esta instalación aquí tienes un video tutorial.
+#Si necesitas más ayuda con esta instalación aquí tienes un video tutorial.
+
 TUTORIAL: [![Watch the video](linkdeimagen)](https://youtu.be/h2Au2ebTXJc?feature=shared)
 
 
