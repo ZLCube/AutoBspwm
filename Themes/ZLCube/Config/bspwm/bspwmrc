@@ -24,7 +24,7 @@ bspc rule -a Screenkey manage=off
 
 
 # WALLPAPER
-feh --bg-fill /home/cube/Wallpaper/wall-02.png
+feh --bg-fill ~/.config/Wallpaper/wall-02.png
 
 
 # POLYBAR
