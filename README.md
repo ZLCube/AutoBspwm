@@ -37,18 +37,22 @@ chmod +x AutoInstall.sh
 
 En caso de querer cambiarlo nuevamente podemos escribir en consola ```rofi -theme selector```
 
-2.- Wallpaper
+6.- Por ultimo la maquina se va a rebootear automaticamente, aquí cambiaremos de sesión arriba a la derecha cambiando de entorno default a BSPWM
+
+![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/bspwm.png)
+
+7.- Wallpaper
 
 Para cambiar el wallpaper usaremos el comando
 ``` nano .config/bspwm/bspwmrc ``` y renombrando el apartado wallpaper con el nombre del wallpaper de tu eleccion en la carpeta ```~/.config/Wallpaper/```.
 
 La configuración es la misma que el entorno de s4vitar al menos en cuanto a shortcuts y terminal se refiere.
 
-3.- Nvim
+8.- Nvim
 
 Esta no esta incluida en el scripts
 
-4.- En caso de unicamente requerir los dotfiles recuerda que los componentes basicos son bspwm, picom, pollybar, sxhkd, hacknerf fonts
+9.- En caso de unicamente requerir los dotfiles recuerda que los componentes basicos son bspwm, picom, pollybar, sxhkd, hacknerf fonts
 
 UNA MENCION HONORIFICA A Mr. Pr1ngl3s, y a xjacksx por su gran colaboración y autorizacion de usar sus repositorios así como a S4vitar por la configuración del entorno, te dejo el enlace a los perfiles de cada uno de ellos.
 
