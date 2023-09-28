@@ -64,7 +64,7 @@ Esta no esta incluida en el scripts
 ## [Pink theme]
 ![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/Screenshot%202023-09-27%20225812.png)
 ## [S4vi theme]
-![]()
+![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/Screenshot%202023-09-28%20002751.png)
 
 UNA MENCION HONORIFICA A Mr. Pr1ngl3s, y a xjacksx por su gran colaboración y autorizacion de usar sus repositorios así como a S4vitar por la configuración del entorno, te dejo el enlace a los perfiles de cada uno de ellos.
 
