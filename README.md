@@ -27,7 +27,9 @@ chmod +x AutoInstall.sh
 
 ![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/themes.png)
 
-4.- 
+4.- Una vez nos salga la pantalla de select theme entonces podremos elegir cualquier tema del paso 3
+
+![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/select.png)
 
 2.- Wallpaper
 
