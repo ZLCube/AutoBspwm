@@ -14,6 +14,10 @@ chmod +x AutoInstall.sh
 
 ./AutoInstall.sh
 ```
+2.- Selecciona tu sistema operativo, 1 kali 2 parrot.
+
+![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/menu.png)
+
 
 2.- Wallpaper
 
