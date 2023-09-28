@@ -5,6 +5,10 @@ Este es un script de instalación de BSPWM para kali o parrot linux, cabe aclara
 ## [Instalación]
 (AVISO: No ejecutes el script como ROOT o SUDO, el script te pedirá tu contraseña por cuenta propia, si lo ejecutas como root la instalación se detendrá)
 
+Si necesitas más ayuda con esta instalación aquí tienes un video tutorial.
+
+TUTORIAL: [![TUTORIAL](linkdeimagen)](https://youtu.be/h2Au2ebTXJc?feature=shared)
+
 1.- Uso del Script 
 
 ```
@@ -53,9 +57,7 @@ La configuración es la misma que el entorno de s4vitar al menos en cuanto a sho
 Esta no esta incluida en el scripts
 
 
-#Si necesitas más ayuda con esta instalación aquí tienes un video tutorial.
 
-TUTORIAL: [![Watch the video](linkdeimagen)](https://youtu.be/h2Au2ebTXJc?feature=shared)
 
 
 
