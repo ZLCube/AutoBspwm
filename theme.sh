@@ -30,6 +30,7 @@ Pacman_theme()
 	sudo rm -rf ~/.config/rofi
 	sudo rm -rf ~/.config/Wallpaper
 	#Movemos los dot files
+	sudo cp -v $ruta/cinn2.jpg ~/Wallpaper/
     sudo cp -v $ruta/Themes/Pacman/.p10k.zsh ~/.p10k.zsh
     sudo cp -v $ruta/Themes/Pacman/.p10k.zsh-root /root/.p10k.zsh
     echo "p10k setup"
