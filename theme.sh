@@ -134,6 +134,7 @@ Cinnamoroll_theme()
     sudo cp -v $ruta/Themes/cin/.p10k.zsh-root /root/.p10k.zsh
     echo "p10k setup"
 	sudo cp -rv $ruta/Themes/cin/config/* ~/.config/
+	sudo cp -rv $ruta/cin2.jpg ~/Wallpaper/
 	echo "config setup"
  	#Install Font for cinnamoroll icons
 	mkdir ~/.fonts
