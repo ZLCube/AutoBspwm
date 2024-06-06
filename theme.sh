@@ -109,14 +109,14 @@ S4vi_theme()
 Cinnamoroll_theme()
 {
 	#Damos permisos de ejecución 
-	sudo chmod +x $ruta/Themes/Cinnamoroll/.p10k.zsh
-	sudo chmod +x $ruta/Themes/Cinnamoroll/.p10k.zsh-root
-	sudo chmod +x $ruta/Themes/Cinnamoroll/Config/bspwm/bspwmrc 
-    sudo chmod +x $ruta/Themes/Cinnamoroll/Config/bspwm/scripts/bspwm_resize 
-    sudo chmod +x $ruta/Themes/Cinnamoroll/Config/bin/ethernet_status.sh
-    sudo chmod +x $ruta/Themes/Cinnamoroll/Config/bin/htb_status.sh 
-    sudo chmod +x $ruta/Themes/Cinnamoroll/Config/bin/htb_target.sh 
-    sudo chmod +x $ruta/Themes/Cinnamoroll/Config/polybar/launch.sh 
+	sudo chmod +x $ruta/Themes/cin/.p10k.zsh
+	sudo chmod +x $ruta/Themes/cin/.p10k.zsh-root
+	sudo chmod +x $ruta/Themes/cin/Config/bspwm/bspwmrc 
+    sudo chmod +x $ruta/Themes/cin/Config/bspwm/scripts/bspwm_resize 
+    sudo chmod +x $ruta/Themes/cin/Config/bin/ethernet_status.sh
+    sudo chmod +x $ruta/Themes/cin/Config/bin/htb_status.sh 
+    sudo chmod +x $ruta/Themes/cin/Config/bin/htb_target.sh 
+    sudo chmod +x $ruta/Themes/cin/Config/polybar/launch.sh 
     sudo chmod +x /usr/local/bin/whichSystem.py 
     sudo chmod +x /usr/local/bin/screenshot 
 	#Limpiamos viejos dot files
@@ -129,10 +129,10 @@ Cinnamoroll_theme()
 	sudo rm -rf ~/.config/rofi
 	sudo rm -rf ~/.config/Wallpaper
 	#Movemos los dot files
-    sudo cp -v $ruta/Themes/Cinnamoroll/.p10k.zsh ~/.p10k.zsh
-    sudo cp -v $ruta/Themes/Cinnamoroll/.p10k.zsh-root /root/.p10k.zsh
+    sudo cp -v $ruta/Themes/cin/.p10k.zsh ~/.p10k.zsh
+    sudo cp -v $ruta/Themes/cin/.p10k.zsh-root /root/.p10k.zsh
     echo "p10k setup"
-	sudo cp -rv $ruta/Themes/Cinnamoroll/Config/* ~/.config/
+	sudo cp -rv $ruta/Themes/cin/Config/* ~/.config/
 	echo "config setup"
     rofi-theme-selector
     echo "Cinnamoroll theme instalado"
