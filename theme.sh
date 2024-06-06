@@ -111,12 +111,12 @@ Cinnamoroll_theme()
 	#Damos permisos de ejecución 
 	sudo chmod +x $ruta/Themes/cin/.p10k.zsh
 	sudo chmod +x $ruta/Themes/cin/.p10k.zsh-root
-	sudo chmod +x $ruta/Themes/cin/Config/bspwm/bspwmrc 
-    sudo chmod +x $ruta/Themes/cin/Config/bspwm/scripts/bspwm_resize 
-    sudo chmod +x $ruta/Themes/cin/Config/bin/ethernet_status.sh
-    sudo chmod +x $ruta/Themes/cin/Config/bin/htb_status.sh 
-    sudo chmod +x $ruta/Themes/cin/Config/bin/htb_target.sh 
-    sudo chmod +x $ruta/Themes/cin/Config/polybar/launch.sh 
+	sudo chmod +x $ruta/Themes/cin/config/bspwm/bspwmrc 
+    sudo chmod +x $ruta/Themes/cin/config/bspwm/scripts/bspwm_resize 
+    sudo chmod +x $ruta/Themes/cin/config/bin/ethernet_status.sh
+    sudo chmod +x $ruta/Themes/cin/config/bin/htb_status.sh 
+    sudo chmod +x $ruta/Themes/cin/config/bin/htb_target.sh 
+    sudo chmod +x $ruta/Themes/cin/config/polybar/launch.sh 
     sudo chmod +x /usr/local/bin/whichSystem.py 
     sudo chmod +x /usr/local/bin/screenshot 
 	#Limpiamos viejos dot files
@@ -132,8 +132,15 @@ Cinnamoroll_theme()
     sudo cp -v $ruta/Themes/cin/.p10k.zsh ~/.p10k.zsh
     sudo cp -v $ruta/Themes/cin/.p10k.zsh-root /root/.p10k.zsh
     echo "p10k setup"
-	sudo cp -rv $ruta/Themes/cin/Config/* ~/.config/
+	sudo cp -rv $ruta/Themes/cin/config/* ~/.config/
 	echo "config setup"
+ 	#Install Font for cinnamoroll icons
+	mkdir ~/.fonts
+	sudo cp $ruta/fonts/fontello.ttf ~/.fonts/
+	fc-cache
+
+	#Move neofetch
+	sudo cp $ruta/cnn ~/.cnn 
     rofi-theme-selector
     echo "Cinnamoroll theme instalado"
     kill -9 -1
