@@ -24,7 +24,7 @@ bspc rule -a Screenkey manage=off
 
 
 # WALLPAPER
-feh --bg-fill /home/kali/wallpapers/sword.png
+feh --bg-fill ~/.config/wallpapers/sword.png
 
 
 # POLYBAR
