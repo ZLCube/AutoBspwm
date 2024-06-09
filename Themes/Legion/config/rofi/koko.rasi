@@ -1,0 +1,54 @@
+/*-*- mode: css; -*-*/
+* {
+	font: "Cantarell Medium 11";
+	margin:     0;
+	padding:    0;
+	height: 368px;
+	width: 656px;
+	background-color: #f9fbff;
+	text-color: grey;
+	}
+
+window {
+	border-radius: 5px;
+	transparency: "real";
+	border: 2px solid ;
+	border-color: #8378c6;
+	}
+
+mainbox {
+	padding: 0px 0px 0px 300px; 
+	background-image: url("emilia.png");
+	}
+
+inputbar {
+	padding: 30px 0px 0px 0px;
+	spacing: 10;
+	margin: 0 0 -3 0;
+	}
+
+prompt {
+	padding: 3 0 20 34px;
+	}
+
+entry {
+	placeholder: "gaze into the abyss";
+	}
+
+listview {
+	/* lines: 9; */
+	columns: 1;
+	spacing: 10;
+	padding: 9 40 15 20; }
+
+element-text {
+	padding: 5px 10px 2px 20px;
+	}
+
+
+/* element-icon { size: 1.65ch ; } */
+element-text selected {
+		text-color: #8378c6;
+		}
+
+/* vim:ft=css
