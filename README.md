@@ -99,6 +99,8 @@ Los dot files los puedes modificar en las siguientes rutas.
 ![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/Screenshot_2023-07-30_130115.png)
 ## [Cinnamoroll theme]
 ![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/Screenshot%202024-06-06%20170420.png)
+## [Legion theme]
+![](https://github.com/ZLCube/AutoBspwm/blob/main/pics/imagen_2024-06-09_015057870.png)
 ## [Pacman theme]
 ![](https://github.com/ZLCube/KaliBspwm/blob/main/Design%20preview%20(Useless)/Picture1.PNG)
 ## [Pink theme]
