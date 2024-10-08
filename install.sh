@@ -8,7 +8,7 @@ ruta=$(pwd)
 
 # Instalando dependencias de Entorno
 
-sudo apt install -y zenity build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+sudo apt install -y build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 
 # Instalando Requerimientos para la polybar
 
@@ -20,7 +20,7 @@ sudo apt install -y meson picom libxext-dev libxcb1-dev libxcb-damage0-dev libxc
 
 # Instalamos paquetes adionales
 
-sudo apt install -y kitty feh scrot scrub rofi xclip bat locate ranger neofetch wmname acpi bspwm sxhkd imagemagick cmatrix
+sudo apt install -y kitty feh scrot scrub rofi xclip bat locate ranger neofetch wmname acpi bspwm sxhkd imagemagick cmatrix zenity
 
 # Creando carpeta de Reposistorios
 
