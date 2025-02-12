@@ -62,7 +62,7 @@ Esta no esta incluida en el scripts
 
 
 9.- En caso de unicamente requerir los dotfiles recuerda que los componentes basicos son bspwm, picom, pollybar, sxhkd, hacknerf fonts
-```
+```c
   ____   _____ _______          ____  __    _____ _                _             _       
  |  _ \ / ____|  __ \ \        / /  \/  |  / ____| |              | |           | |      
  | |_) | (___ | |__) \ \  /\  / /| \  / | | (___ | |__   ___  _ __| |_ ___ _   _| |_ ___ 
