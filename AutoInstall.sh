@@ -33,10 +33,10 @@ exec()
 {
 	case $1 in
 		1)
-			sudo apt update & sudo apt upgrade & sudo apt install zenity & ./install.sh & ./theme.sh
+			sudo apt update && sudo apt upgrade && sudo apt install zenity && ./install.sh && ./theme.sh
 			;;
 		2)
-			sudo apt update & sudo parrot-upgrade & ./install.sh & ./theme.sh
+			sudo apt update && sudo parrot-upgrade && ./install.sh && ./theme.sh
 			;;
 		3)
 			echo "Exit script"
