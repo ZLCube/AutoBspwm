@@ -237,7 +237,7 @@ Legion_theme()
 	sudo rm -rf ~/.config/rofi
 	sudo rm -rf ~/.config/Wallpaper
  	sudo rm -rf ~/.config/kitty
-  	sudo rm -rf ~/.config/neofetch
+  	#sudo rm -rf ~/.config/neofetch
    	sudo rm -rf ~/.config/wallpapers
 	#Movemos los dot files
     sudo cp -v $ruta/Themes/Legion/.p10k.zsh ~/.p10k.zsh
